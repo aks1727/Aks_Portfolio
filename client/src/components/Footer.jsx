@@ -24,7 +24,7 @@ function Footer() {
 					mb={4}
 				>
 					<Link
-						href="https://github.com/aks1719"
+						href="https://github.com/aks1727"
 						isExternal
 					>
 						<Icon

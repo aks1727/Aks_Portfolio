@@ -153,7 +153,7 @@ function About() {
 					>
 						<Image
 							height={"100%"}
-							src="./assets/img/21P31A0570.png"
+							src="./assets/img/portfolio.png"
 							alt="Akshat Kumar Sinha"
 							style={{
 								position: "relative",
