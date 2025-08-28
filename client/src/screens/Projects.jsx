@@ -17,9 +17,9 @@ const projects = {
 	webProjects: [
 		{
 			name: "Consultancy Service Platform",
-			githubLink:
-				"https://github.com/AkshatKumarSinha9327/ConsultancyService",
-			websiteLink: "https://nexadev-consultancy-service.vercel.app/",
+			githubRepo:
+				"ConsultancyService",
+			websiteLink: "https://consultancy-service-platform.vercel.app/",
 			description:
 				"A platform enabling users to connect with top mentors for personalized guidance and knowledge-sharing.",
 			keyFeatures: ["Chat communication", "Notifications", "Mentor search"],
@@ -28,11 +28,11 @@ const projects = {
 				ui: "Chakra UI",
 				additional: "Web sockets",
 			},
-			imgLink: "./assets/img/project/consultancy.png",
+			imgLink: "./assets/img/project/Web/consultancy.png",
 		},
 		{
 			name: "Music Player Platform",
-			githubLink: "https://github.com/AKS1719/React-Music-player",
+			githubRepo: "React-Music-player",
 			websiteLink: "https://vaiaksh-music.vercel.app/",
 			description:
 				"An interactive music player platform supporting emerging artists with seamless music playback and upload functionality.",
@@ -41,13 +41,13 @@ const projects = {
 				stack: "MERN Stack",
 				ui: "Chakra UI",
 			},
-			imgLink: "./assets/img/project/musicPlayer.jpeg",
+			imgLink: "./assets/img/project/Web/musicPlayer.jpeg",
 		},
 	],
 	automationProjects: [
 		{
 			name: "Swag Labs Automation",
-			githubLink: "https://github.com/aks1727/SwagLabsAutomation",
+			githubRepo: "SwagLabsAutomation",
 			websiteLink: null,
 			description:
 				"An automation testing framework for Swag Labs e-commerce app to validate login, product selection, cart, and checkout workflows.",
@@ -62,14 +62,14 @@ const projects = {
 				ui: "Extent Reports",
 				additional: "Apache POI, Cucumber (BDD)",
 			},
-			imgLink: null,
+			imgLink: "./assets/img/project/Automation/swaglabs.jpeg",
 		},
 	],
 	mobileProjects: [
 		{
 			name: "Currency Converter",
-			githubLink:
-				"https://github.com/AKS1719/ReactNativePractice/tree/main/CurrencyConverter",
+			githubRepo:
+				"ReactNativePractice/tree/main/CurrencyConverter",
 			websiteLink: null,
 			description:
 				"A mobile application for converting currencies in real-time using up-to-date exchange rates.",
@@ -79,14 +79,14 @@ const projects = {
 				ui: "Custom components",
 				additional: "Optional API calls",
 			},
-			imgLink: null,
+			imgLink: "./assets/img/project/Mobile/currenyConverter.jpeg",
 		},
 	],
 	mlProjects: [
 		{
 			name: "Employee Burnout Prediction",
-			githubLink:
-				"https://github.com/AKS1719/Employee_Burnot_Prediction_Project",
+			githubRepo:
+				"Employee_Burnot_Prediction_Project",
 			websiteLink: null,
 			description:
 				"A machine learning project aimed at predicting employee burnout by analyzing work patterns, behavior data, and other related factors.",
@@ -96,7 +96,7 @@ const projects = {
 				ui: "Jupyter Notebook",
 				additional: "TensorFlow integration",
 			},
-			imgLink: null,
+			imgLink: "./assets/img/project/ML/employeeburnoutPrediction.jpeg",
 		},
 	],
 };
@@ -223,8 +223,8 @@ function ProjectCard({ project }) {
 						Live Demo
 					</Button>
 				)}
-				{project.githubLink && (
-					<Button as="a" href={project.githubLink} target="_blank" colorScheme="blue" size="sm">
+				{project.githubRepo && (
+					<Button as="a" href={"https://github.com/aks1727/"+project.githubRepo} target="_blank" colorScheme="blue" size="sm">
 						GitHub
 					</Button>
 				)}
